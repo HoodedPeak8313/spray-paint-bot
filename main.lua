@@ -2,8 +2,10 @@
 
 loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
 
-local ringLeader1 = game:GetService("Players").AreYouOkay19
 
+loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+task.spawn(function()
+local ringLeader1 = game:GetService("Players").AreYouOkay19
 ringLeader1.Chatted:Connect(function(vote)
     if vote:lower() == "-vote yes" then
         local args = {
@@ -19,7 +21,9 @@ ringLeader1.Chatted:Connect(function(vote)
         game:GetService("ReplicatedStorage").VoteKick:FireServer(unpack(args))
     end
 end)
+end)
 
+task.spawn(function()
 local ringLeader2 = game:GetService("Players").boombongbingy
 
 ringLeader2.Chatted:Connect(function(vote2)
@@ -37,7 +41,9 @@ ringLeader2.Chatted:Connect(function(vote2)
         game:GetService("ReplicatedStorage").VoteKick:FireServer(unpack(args))
     end
 end)
+end)
 
+task.spawn(function()
 local ringLeader3 = game:GetService("Players").DeepDivy
 
 ringLeader3.Chatted:Connect(function(vote3)
@@ -54,4 +60,5 @@ ringLeader3.Chatted:Connect(function(vote3)
         }
         game:GetService("ReplicatedStorage").VoteKick:FireServer(unpack(args))
     end
+end)
 end)
