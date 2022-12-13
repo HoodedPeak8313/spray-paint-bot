@@ -3,10 +3,6 @@
 loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
 
 local ringLeader1 = game:GetService("Players").AreYouOkay19
-local ringLeader2 = game:GetService("Players").boombongbingy
-local ringLeader3 = game:GetService("Players").DeepDivy
-
-
 
 ringLeader1.Chatted:Connect(function(vote)
     if vote:lower() == "-vote yes" then
@@ -24,7 +20,7 @@ ringLeader1.Chatted:Connect(function(vote)
     end
 end)
 
-----
+local ringLeader2 = game:GetService("Players").boombongbingy
 
 ringLeader2.Chatted:Connect(function(vote2)
     if vote2:lower() == "-vote yes" then
@@ -42,7 +38,7 @@ ringLeader2.Chatted:Connect(function(vote2)
     end
 end)
 
-----
+local ringLeader3 = game:GetService("Players").DeepDivy
 
 ringLeader3.Chatted:Connect(function(vote3)
     if vote3:lower() == "-vote yes" then
