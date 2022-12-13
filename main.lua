@@ -2,8 +2,6 @@
 
 loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
 
-
-loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
 task.spawn(function()
 local ringLeader1 = game:GetService("Players").AreYouOkay19
 ringLeader1.Chatted:Connect(function(vote)
