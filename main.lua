@@ -1,7 +1,6 @@
--- if you are smart enough to modify the script to work for yourself, good job, sorry for less talented people, I haven't released it yet.
+-- modify to work with your own username if you want, just give creds
 
 loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
-
 task.spawn(function()
 local ringLeader1 = game:GetService("Players").AreYouOkay19
 ringLeader1.Chatted:Connect(function(vote)
@@ -18,7 +17,16 @@ ringLeader1.Chatted:Connect(function(vote)
         }
         game:GetService("ReplicatedStorage").VoteKick:FireServer(unpack(args))
     end
-end)
+	elseif vote:lower() == "-flood" then
+		local args = {
+		[1] = "WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW" ..
+			"WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWarsonWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW" ..
+			"WWWWWWWWWWWWWW",
+		[2] = "All"
+	}
+	game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
+		end
+	end)
 end)
 
 task.spawn(function()
@@ -38,7 +46,16 @@ ringLeader2.Chatted:Connect(function(vote2)
         }
         game:GetService("ReplicatedStorage").VoteKick:FireServer(unpack(args))
     end
-end)
+		elseif vote2:lower() == "-flood" then
+		local args = {
+		[1] = "WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW" ..
+			"WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWarsonWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW" ..
+			"WWWWWWWWWWWWWW",
+		[2] = "All"
+	}
+	game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
+		end
+	end)
 end)
 
 task.spawn(function()
@@ -58,5 +75,14 @@ ringLeader3.Chatted:Connect(function(vote3)
         }
         game:GetService("ReplicatedStorage").VoteKick:FireServer(unpack(args))
     end
-end)
+		elseif vote3:lower() == "-flood" then
+		local args = {
+		[1] = "WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW" ..
+			"WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWarsonWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW" ..
+			"WWWWWWWWWWWWWW",
+		[2] = "All"
+	}
+	game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
+		end
+	end)
 end)
