@@ -44,7 +44,7 @@ ringLeader2.Chatted:Connect(function(vote2)
             [2] = false
         }
         game:GetService("ReplicatedStorage").VoteKick:FireServer(unpack(args))
-	elseif vote:lower() == "-flood" then
+	elseif vote2:lower() == "-flood" then
 		local args = {
 		[1] = "WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW" ..
 			"WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWarsonWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW" ..
@@ -72,7 +72,7 @@ ringLeader3.Chatted:Connect(function(vote3)
             [2] = false
         }
         game:GetService("ReplicatedStorage").VoteKick:FireServer(unpack(args))
-	elseif vote:lower() == "-flood" then
+	elseif vote3:lower() == "-flood" then
 		local args = {
 		[1] = "WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW" ..
 			"WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWarsonWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW" ..
