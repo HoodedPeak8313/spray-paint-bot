@@ -1,4 +1,4 @@
--- modify to work with your own username if you want, just give creds
+-- modify for your own username if you want just give creds
 
 loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
 task.spawn(function()
@@ -16,11 +16,10 @@ ringLeader1.Chatted:Connect(function(vote)
             [2] = false
         }
         game:GetService("ReplicatedStorage").VoteKick:FireServer(unpack(args))
-    end
 	elseif vote:lower() == "-flood" then
 		local args = {
 		[1] = "WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW" ..
-			"WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWarsonWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW" ..
+			"WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWarsonWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW" ..
 			"WWWWWWWWWWWWWW",
 		[2] = "All"
 	}
@@ -45,11 +44,10 @@ ringLeader2.Chatted:Connect(function(vote2)
             [2] = false
         }
         game:GetService("ReplicatedStorage").VoteKick:FireServer(unpack(args))
-    end
-		elseif vote2:lower() == "-flood" then
+	elseif vote:lower() == "-flood" then
 		local args = {
 		[1] = "WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW" ..
-			"WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWarsonWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW" ..
+			"WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWarsonWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW" ..
 			"WWWWWWWWWWWWWW",
 		[2] = "All"
 	}
@@ -74,11 +72,10 @@ ringLeader3.Chatted:Connect(function(vote3)
             [2] = false
         }
         game:GetService("ReplicatedStorage").VoteKick:FireServer(unpack(args))
-    end
-		elseif vote3:lower() == "-flood" then
+	elseif vote:lower() == "-flood" then
 		local args = {
 		[1] = "WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW" ..
-			"WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWarsonWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW" ..
+			"WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWarsonWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW" ..
 			"WWWWWWWWWWWWWW",
 		[2] = "All"
 	}
